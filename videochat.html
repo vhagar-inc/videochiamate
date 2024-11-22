@@ -1,0 +1,13 @@
+<div id="jitsi-meet-container"></div>
+
+<script src="https://meet.jit.si/external_api.js"></script>
+<script>
+    const domain = 'meet.jit.si';
+    const options = {
+        roomName: 'RoomName1234', // Puoi usare una variabile dinamica per il nome della stanza
+        width: '100%',
+        height: '100%',
+        parentNode: document.querySelector('#jitsi-meet-container')
+    };
+    const api = new JitsiMeetExternalAPI(domain, options);
+</script>
